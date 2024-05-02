@@ -10,7 +10,7 @@
 - 선택자 그룹핑 (선택자, 선택자 ...)
 - css 변수 (Custom Property) 
 - 플렉스 박스 기초
-- re
+- resdsd
 
 웹카페(Basic) 실습 저장소
 
