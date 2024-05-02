@@ -11,33 +11,51 @@ body {
 }
 
 
-.header, .visual, .main, .slogan, .footer {
+.header, .visual, .main, .slogan, .footer-inner {
   width: var(--container-size, 940px);
   margin: 0 auto;
 }
 /* 헤더 */
 .header {
   background-color: yellow;
+  height: 10vh;
   
 }
 /* 비주얼 */
 .visual {
   background-color: pink;
+  height: 10vh;
   
 }
 /* 메인 */
 .main {
   background-color: skyblue;
-  
+  height: 60vh;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;    /* 메인 축 시작 부분에 정렬 */
+  align-items: stretch;    /* 교차 축 */
 }
+
+.group {
+  border: 1px solid red;
+}
+
 /* 슬로건 */
 .slogan {
   background-color: lime;
+  height: 10vh;
   
 }
 /* 푸터 */
 .footer {
   background-color: orange;
+  height: 10vh;
   
+}
+
+.footer-inner {
+  background-color: yellow;
+  height: 10vh;
 }
 
