@@ -2,6 +2,15 @@
 
 # 웹카페(Basic)
 
+- 스타일 시트 연결
+- main,css
+- HTML 기본 구조 설계
+- width, lnline-size (논리특성)
+- border, padding, margin (기본 박스모델)
+- 선택자 그룹핑 (선택자, 선택자 ...)
+- css 변수 (Custom Property) 
+- 플렉스 박스 기초
+
 웹카페(Basic) 실습 저장소
 
 **techit-school** 폴더로 이동 후 **clone** 
