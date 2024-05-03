@@ -22,6 +22,7 @@ body {
   background-color: yellow;
   height: 10vh;
   padding: 0 50px;
+  border-radius: 30px;
 }
 /* 비주얼 */
 .visual {
@@ -31,21 +32,22 @@ body {
 /* 메인 콘텐츠 */
 .main {
   background-color: skyblue;
-  /* height: 60vh; */
   display: flow-root;
   min-height: 450px;
   padding: 28px 16px 36px;
 }
 
-
 .group {
   border: 1px solid red;
-  
+  float: left;
+}
+
+.group:nth-child(n + 2) {
+  margin-left: 44px;
 }
 
 .group1 {
   width: 250px;
-  
   background-color: orange;
 }
 
@@ -57,7 +59,6 @@ body {
 .group3 {
   background: hotpink;
   width: 190px;
-  
 }
 
 /* 슬로건 */
@@ -74,4 +75,16 @@ body {
 .footer-inner {
   background: yellow;
   height: 10vh;
+}
+
+/* -------------------------------------------------------------------------- */
+/*                          flex를 지원하는 웹브라우저를 위한 스타일                   */
+/* -------------------------------------------------------------------------- */
+
+@supports (display: flex) {
+  .main {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+  }
 }
