@@ -23,6 +23,9 @@
 - 레이아웃을 위해 margin 활용
 - 구조 선택자
 - float 요소 안에서 float 요소로 정의하기 (order 속성)
+- border-radius
+- postion 속성(relative, absolute)
+
 웹카페(Basic) 실습 저장소
 
 **techit-school** 폴더로 이동 후 **clone** 

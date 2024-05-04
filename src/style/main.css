@@ -19,11 +19,21 @@ body {
 
 /* 헤더 */
 .header {
-  background-color: yellow;
-  height: 10vh;
+  background-color: darkblue;
+  height: 120px;
   padding: 0 50px;
-  border-radius: 30px;
+  border-radius: 0 0 15px 15px;
+  position: relative;
 }
+
+/* 로고 */
+.logo {
+  background-color: orange;
+  position: absolute;
+  top: 45px;
+  left: 60px;
+}
+
 /* 비주얼 */
 .visual {
   background-color: pink;
@@ -86,5 +96,13 @@ body {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
+  }
+
+  .group:nth-child(n + 2) {
+    margin-left: 0;
+  }
+
+  .group3 {
+    order: -1;
   }
 }
