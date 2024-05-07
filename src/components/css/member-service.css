@@ -1,19 +1,19 @@
 /* 텍스트 링크 모음 */
-:root {
-  --base-font-family: "SUIT"
+:root{
+  --base-font-famaily: "SUIT Variable", sans-serif; 
 }
 
 .member-service {
   --font-size: 0.875rem;
 
-
+  font-family: var(--base-font-famaily);
   font-size: 0;
   
   list-style-type: none;
    padding-inline-start: 0;    /*왼쪽 여백 사라지는 효과*/
    margin: 0;
    text-align: right;               /*세트효과로 작성하면 좋을 듯*/
-    inline-size: 800px;
+    
                      
    
   li {                            /*처음에 인라인사이즈200px 적용안됨,width 지원안하니까*/
