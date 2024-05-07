@@ -53,6 +53,14 @@
 #    
     padding-inline-start: 0;    /*왼쪽 여백 사라지는 효과*/
 #
+- `.member-service li` 일반적인 선언 li 말고 .`member-service li` 하면 자손선택자 방식을 사용 
+`.member-service {}` 안에 li {} 해주는 방식을 `중첩패턴` 이라고 함
+단점은 모바일로 가면, `@media`를 사용할 때, 안에 또 작성해야해서 가독성이 떨어지는 단점이 있다.
+장점은 컨포넌트를 캡슐화 할 때 가독성이 좋다??..
+- `font-variant small-caps;`를 a를 주든 li한테 주든 부모를 주든 english가 똑같이 대문자로 된다 `why?` 상속되서
+- `color: inherit;` 부모로부터 상속받게 하고 직접 지정하게 하는 방법을 많이 사용한다
+- 백그라운드의 `기본값`은 `투명값`이다
+#
     li {                                             
      display: inline-block;         /*하지만 인라인 블록으로 변경하면 바뀜*/ 
     inline-size: 200px;             /*처음에 인라인사이즈200px 적용안됨,width 지원안하니까*/
