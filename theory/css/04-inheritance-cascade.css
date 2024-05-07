@@ -2,23 +2,18 @@ body {
   color: #ff0000;
   font-size: 30px;
 }
-
 div {
   border: 1px solid blue;
 }
-
-
 h1.heading {
   color: purple; 
 }
 h1 {
   color: green; 
 }
-
 .techit {
   color: black;
 }
-
 .container {
   color: hotpink;
 }
