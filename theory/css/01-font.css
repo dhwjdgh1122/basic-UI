@@ -6,17 +6,15 @@ html {
   font-size: 10px;
 }
 
-body {
-  font-family: "SUIT Variable", sans-serif;
-}
+
 
  h1 {
-  /*line-height: 1;
+  line-height: 1;
   font-size: 60px;
   font-weight: 100;
   font-style: italic;
-  font-variant: small-caps; */
-  font: bold italic small-caps 60px /1 "SUIT Variable"; 
+  font-variant: small-caps; 
+  
   
   
 } 
