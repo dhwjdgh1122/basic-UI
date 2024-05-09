@@ -1,61 +1,44 @@
+@import url(../../style/reset.css);
 @import url(../../style/theme.css);
-
-/* 스타일 초기화 */
-h1, h2, h3, h4, h5, h6{
-  font: inherit;
-  font-size: 1em;
-  margin: 0;
-}
-
-a{
-  color: inherit;
-  text-decoration: none;
-}
-
-ul, ol{
-  list-style: none;
-  padding-left: 0;
-  padding-inline-start: 0;
-  margin: 0;
-}
-
-fieldset{
-  border: 0;
-  margin: 0;
-  padding: 0
-}
-
-input, textarea, select, option, button{
-  font: inherit;
-}
-
-
-/* 기본 스타일 */
-:root{
-  --base-font-family: "SUIT Variable", sans-serif; 
-}
-
-body{
-  font-family: var(--base-font-family);
-  line-height: 1.15;
-}
+@import url(../../style/base.css);
 
 /* input 컴포넌트 */
 .form-input{
+  --spacing: 10px;
+  --border-color: var(--gray-500);
+  --radius: 3px;
+  border-bottom: 1px solid #fff;
+
   display: flex;
   flex-flow: row nowrap;
-  gap: 10px;
+  gap: var(--spacing);
+  align-items: center;
+
+  label{
+    white-space: nowrap;
+  }
 
   input{
     flex-grow: 1;
-    border: 1px solid #aaa;
-    border-radius: 3px;
+    /* border: 1px solid var(--border-color); */
+    border: 0;
+    border-radius: var(--radius);
     padding: 1px 1px 1px 8px;
     height: 24px;
     block-size: 24px;
     width: 100%;
   }
+
+  input:focus {
+    outline: 0;
+  }
+  
+  &:focus-within{
+    border-bottom-color: red;
+  }
 }
+
+
 
 /* button 컴포넌트 */
 .button{
@@ -69,17 +52,16 @@ body{
   color: var(--color);
   border-radius: var(--radius);
   white-space: nowrap;
-
-  &:focus {
-    outline: 0;;
-  }
 }
+
 
 
 /* 링크 텍스트 컴포넌트 (아이콘 유형) */
 .icon-link{
+  --color: var(--orange-200);
+
   [class*='fas']{
-    color: var(--orange-200);
+    color: var(--color);
     padding-right: 0.25em;
     padding-inline-end: 0.25em;
   }
@@ -129,7 +111,7 @@ body{
       padding-block-end: var(--spacing);
     }
 
-    .form-input-group{
+    .login-input-group{
       flex-grow: 1;
       display: flex;
       flex-flow: column nowrap;
