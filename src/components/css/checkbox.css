@@ -1,7 +1,7 @@
 
-@import url(/style/reset.css);
-@import url(/style/theme.css);
-@import url(/style/base.css);
+@import url(../../style/reset.css);
+@import url(../../style/theme.css);
+@import url(../../style/base.css);
 
 
 body, h1{
@@ -19,12 +19,12 @@ body, h1{
   }
 
   label{
-    background: url(/components/images/un-check.svg) no-repeat 0 0 /contain;
+    background: url(../images/un-check.svg) no-repeat 0 0 /contain;
     padding-left: 25px;
   }
 
   input:checked + label{
-    background-image: url(../../images/);
+    background-image: url(../images/checked.svg);
   }
 
   input:focus{
