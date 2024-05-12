@@ -7,6 +7,7 @@ link: https://github.com/dhwjdgh1122/basic-UI/blob/student/src/components/README
 
 ## basic-UI-README.md
 link: https://github.com/dhwjdgh1122/basic-UI/blob/student/theory/README.md
+
  ### CSS 학습 주제  
 
 - [X] 텍스트 및 글꼴 
@@ -20,22 +21,22 @@ link: https://github.com/dhwjdgh1122/basic-UI/blob/student/theory/README.md
 - [] Position
 - [] Flex
 - [] Gid
-- [] 논리 특성
+- [X] 논리 특성
 - [X] 유사 요소(Pseudo-elements), 유사 클래스(Pseudo-classes)
-- [] 그림자 (Shadow)
+- [X] 그림자 (Shadow)
 - [] 함수 (Function)
 - [X] 배경 및 그래디언트
 - [] 마스크 이미지
 - [X] 애니메이션 (Animation)
 - [] 화면전환(Transition)
 - [] 필터와 혼합모드
-- [] 목록
+- [X] 목록
 - [X] 숨김 콘텐츠 (Screen Reader Only)
 - [] 포커스 스타일링 (:focus-visible, :focus-widthin)
 - [X] 변수 (Custom Properties)
 - [X] 중첩 (Nesting)
-- [] 오버플로우
-- [] 반응형 iframe(aspect-ratio)
+- [X] 오버플로우
+- [X] 반응형 iframe(aspect-ratio)
 - [] 스프라이트(Sprite) 배경이미지
 - [] SVG 스프라이트
 - [] 다크 모드 (prefer-color-scheme)
