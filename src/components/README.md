@@ -1,4 +1,47 @@
 ## member-service
+## HTML
+    <!DOCTYPE html>
+    <html lang="ko">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>텍스트 링크 모음</title>
+        <link
+          href="https://cdn.jsdelivr.net/gh/sun-typeface/SUIT/fonts/variable/woff2/SUIT-Variable.css"
+          rel="stylesheet"
+        />
+        <link rel="stylesheet" href="./css/member-service.css" />
+      </head>
+      <body>
+        <h1>텍스트 링크 모음</h1>
+
+    <ul class="member-service">
+      <li>
+        <a href="/">홈</a>
+      </li>
+      <li>
+        <span aria-hidden="true">:</span>
+        <a href="/">로그인</a>
+      </li>
+      <li>
+        <span aria-hidden="true">:</span>
+        <a href="/">회원가입</a>
+      </li>
+      <li>
+        <span aria-hidden="true">:</span>
+        <a href="/">사이트맵</a>
+      </li>
+      <li>
+        <span aria-hidden="true">:</span>
+        <a href="/">english</a>
+      </li>
+    </ul>
+   
+
+  </body>
+</html>
+
+  ## CSS 
       /* 텍스트 링크 모음 */
       :root{
         --base-font-famaily: "SUIT Variable", sans-serif; 
@@ -40,12 +83,12 @@
                                           
                                     
       }
-# 
+## code 
     <li>
         <a href="/">홈</a>
       </li>
       <li>
-        <span>:</span>
+        <span aria-hidden="true">:</span>
         <a href="/">로그인</a>
       </li>
 - 접근성에서 바라보면 홈 링크, 로그인 링크 이렇게 음성으로 들린다.
