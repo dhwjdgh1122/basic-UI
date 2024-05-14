@@ -12,12 +12,12 @@
     <h1>탭 컴포넌트</h1>
 
     <div class="tabs">
-      <div class="tab-list">
-        <div class="tab is-selected">공지사항</div>
-        <div class="tab">자료실</div>
+      <div class="tab-list" role="tablist" aria-orientation="horizontal">
+        <div class="tab is-selected" role="tab" id="tab1" aria-controls="tabpanel1" aria-selected="true" tabindex="0">공지사항</div>
+        <div class="tab" role="tab" id="tab2" aria-controls="tabpanel2" aria-selected="false" tabindex="0">자료실</div>
       </div>
 
-      <div class="tab-panel">
+      <div class="tab-panel is-selected" role="tabpanel" aria-labelledby="tab1" id="tabpanel1">
         <div class="tab-panel-item">
           <a href="/"><span  class="fas fa-circle-dot"></span>HTML의 모든것을 알려주마 샘플 활용법</a>
           <span>2024.04.22</span>
@@ -38,10 +38,10 @@
           <a href="/"><span  class="fas fa-circle-dot"></span>HTML의 모든것을 알려주마 샘플 활용법</a>
           <span>2024.04.22</span>
         </div>
-        <a href="/"><span class="fas fa-plus"></span>더보기</a>
+        <a href="/" class="tab-more"><span class="fas fa-plus"></span>더보기</a>
       </div>
 
-      <div class="tab-panel">
+      <div class="tab-panel" role="tabpanel" aria-labelledby="tab2" id="tabpanel2">
         <div class="tab-panel-item">
           <a href="/"><span  class="fas fa-circle-dot"></span>웹접근성 향상을 위한 HTML 마크업</a>
           <span>2024.04.22</span>
@@ -62,8 +62,8 @@
           <a href="/"><span  class="fas fa-circle-dot"></span>웹접근성 향상을 위한 HTML 마크업</a>
           <span>2024.04.22</span>
         </div>
-        <a href="/"><span class="fas fa-plus"></span>더보기</a>
-      </div>
+        <a href="/" class="tab-more"><span class="fas fa-plus"></span>더보기</a>
+      </div> 
     </div>
 
   </body>
