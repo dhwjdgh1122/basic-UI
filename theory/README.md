@@ -126,3 +126,26 @@ h태그를 눌러보면 에이전시 스타일이 정해져 있기 때문이다.
 - `h1.heading` 처럼 작성하면 우선순위가 높아짐
 - `!important` 속성을 부여해주면 순위가 더 높아짐 정적인 스타일이 아니라 동적인 스타일 사용할 때, 스타일을 무조건 바꿔치기 해야할 때 사용한다 가급적 사용 X 
 
+## 12-rwd-image
+    <figure>
+    <img src="https://picsum.photos/id/237/600/400" alt="" aria-describedby="고유한 id 변경 요망">
+    <figcaption id="imgCaption">고유한 id 변경 요망</figcaption>
+    </figure>
+- `figcaption`으로 이미지에 대한 설명 가능 , id 부여도 가능 `aria`
+## 
+    figure {
+    margin: 0;
+    background: yellow;
+    width: 1000px;    // 80%
+    inline-size: 1000px;
+    }
+
+    img {
+      max-width: 100%;
+    }
+- `max-width` 원본크기 넘지 않게 해주는 역할 `figure`에는 `width`를  **퍼센트**로해줘야함, 인라인사이즈도
+##
+    .rwd-img {
+	  max-width: 100%;
+	  height: auto; // auto로 기본설정 생략가능
+    }
