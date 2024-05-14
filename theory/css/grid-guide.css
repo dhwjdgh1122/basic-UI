@@ -1,0 +1,37 @@
+@import url(default.css);
+
+/* iframe 컴포넌트 */
+
+.iframe-container{
+  margin: 0;
+  
+  .iframe-wrapper{
+    position: relative;
+    padding-top: 56.25%;
+  }
+
+  iframe{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.iframe-container2{
+  margin: 0;
+  aspect-ratio: 16/9;
+
+  iframe{
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+  }
+}
+
+/* 레이아웃 */
+.box, .box2{
+  width: 50%;
+  margin: 20px auto;
+}
