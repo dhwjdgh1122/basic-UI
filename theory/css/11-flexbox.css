@@ -1,9 +1,7 @@
 @import url(./default.css);
 
 
-body{
-  /* font-size: clamp(0.75rem, 3vw, 2.25rem); */
-}
+
 
 .container{
   display: flex;

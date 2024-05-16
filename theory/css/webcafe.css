@@ -108,8 +108,8 @@
 .logo{
   background-color: blue;
   background-image: image-set(
-    url(/images/webcafe-logo.png) 1x,
-    url(/images/webcafe-logo@2x.png) 2x
+    url(../../images/images/webcafe-logo.png) 1x,
+    url(../../images/webcafe-logo@2x.png) 2x
   );
   background-size: cover;
   background-repeat: no-repeat;
