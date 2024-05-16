@@ -143,7 +143,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: url(/apple/apple_watch.jpeg);
+  background-image: url(../../apple/apple_watch.jpeg);
   background-repeat: no-repeat;
   background-position: 0 100%;
   background-clip: text;
@@ -166,7 +166,7 @@
 .sprite{
   height: 60px;
   background-color: hotpink;
-  background-image: url(/images/sprite_main.png);
+  background-image: url(../../images/images/sprite_main.png);
   background-repeat: no-repeat;
   text-indent: 65px;
 }

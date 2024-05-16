@@ -124,7 +124,81 @@ h태그를 눌러보면 에이전시 스타일이 정해져 있기 때문이다.
 - 어떤 거는 상속이 되고 안된다 상속보단 내가 가진 값으로 보이고 `border inherit`로 상속받게 부여해준다 - 강제성?
 - 나중에 선언한 green 보다 먼저 선언한 보라색이 적용되는 모습 why? 요소,태그 선택자보단 **클래스 선택자**가 우선순위가 더 높기 때문에
 - `h1.heading` 처럼 작성하면 우선순위가 높아짐
-- `!important` 속성을 부여해주면 순위가 더 높아짐 정적인 스타일이 아니라 동적인 스타일 사용할 때, 스타일을 무조건 바꿔치기 해야할 때 사용한다 가급적 사용 X 
+- `!important` 속성을 부여해주면 순위가 더 높아짐 정적인 스타일이 아니라 동적인 스타일 사용할 때, 스타일을 무조건 바꿔치기 해야할 때 사용한다 가급적 사용 X
+## 11-flexbox.css
+      
+
+      .container{
+        display: flex;
+        flex-flow: column nowrap;
+        height: 100vh;
+
+        /* div{
+          background-color: #fff;
+          box-shadow: 0 0 0 1px #000;
+        } */
+      }
+
+      .header{
+        height: 70px;
+        block-size: 70px;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        gap: 20px;
+        padding: 0 20px;
+
+        div{
+          background-color: #fff;
+          box-shadow: 0 0 0 1px #000;
+        }
+      }
+
+      .logo{
+        /* margin-right: auto;
+        margin-inline-end: auto; */
+        flex-shrink: 0;
+      }
+
+      .search{
+        flex-basis: 500px;
+        flex-grow: 1;
+      }
+
+      .login{
+        order: 1;
+        flex-shrink: 0;
+      }
+
+      .navigation{
+        height: 50px;
+        block-size: 50px;
+      }
+
+      .wrapper{
+        display: flex;
+        flex-flow: row nowrap;
+        column-gap: 50px;
+        flex: 1 0 0;
+        /* overflow: auto; */
+      }
+
+      /* .main과 .sidebar를 Grouping */
+      .main{
+        /* flex-grow: 1;
+        flex-shrink: 0;
+        flex-basis: 0; */
+        flex: 1 0 0;
+      }
+
+      .sidebar{
+        /* flex-grow: 0;
+        flex-shrink: 0;
+        flex-basis: 200px; */
+        flex: 0 0 150px;
+      }
+- `auto`값을 가지지 않은 `flex-basis`와 `width column`인 경우 `height`값을 동시에 적용한 경우 `flex-basis` 가 우선합니다 - **flex-basis mdn**
+    
 
 ## 12-rwd-image
     <figure>
