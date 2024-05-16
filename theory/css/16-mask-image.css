@@ -1,0 +1,32 @@
+.container{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 200px;
+}
+
+.mask-bg{
+  background-color: yellow;
+  background-image: url(/apple/apple_watch.jpeg);
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+  background-size: cover;
+  mask-image: url(/svg/sun.svg);
+  mask-repeat: no-repeat;
+  mask-position: 50% 50%;
+}
+
+.mask-text{
+  background-color: pink;
+  background-image: url(/apple/apple_watch.jpeg);
+  background-repeat: no-repeat;
+  background-position: 50% 100%;
+  background-size: cover;
+  font-size: 100px;
+  font-weight: 900;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  background-clip: text;
+  color: transparent;
+}

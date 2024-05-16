@@ -1,0 +1,12 @@
+/* 로고 */
+.logo{
+  background-image: image-set(
+    url(/images/images/webcafe-logo.png) 1x,
+    url(/images/images/webcafe-logo@2x.png) 2x
+  );
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 12.75rem;
+  /* 이미지 가로, 세로 비율 */
+  aspect-ratio: 1/0.28921568627450983;
+}

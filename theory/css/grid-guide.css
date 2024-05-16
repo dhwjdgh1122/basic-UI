@@ -1,6 +1,6 @@
 :root{
   --min-container-size: 320px;
-  --max-container-size: 90%;
+  --max-container-size: 1280px;
   /* --spacing: 24px; */
   --gap: 24px;
   --column-count: 12;
