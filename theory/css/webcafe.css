@@ -1,0 +1,176 @@
+@import url(../../src/style/reset.css);
+@import url(../../src/style/reset.css);
+@import url(../../theory/css/grid.css);
+
+/* 웹카페 반응형 레이아웃 */
+.container{
+  min-height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  
+  .header, .navigation, .footer{
+    height: 100px;
+    block-size: 100px;
+    width: 100%;
+    inline-size: 100%;
+  }
+
+  .main{
+    max-width: 100%;
+    width: 90%;
+    flex: 1 0 auto;
+    gap: 24px;
+  }
+}
+
+/* 햄버거 버튼 */
+.burger-button{
+  background: transparent;
+  border: 0;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+  z-index: 10;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  
+  span{
+    width: 100%;
+    height: 20%;
+    background-color: #fff;
+    border-radius: 20px;
+    transition: all 200ms;
+    grid-area: 1 / 1 / 2 / 2;
+  }
+
+  .burger-bar-top{
+    align-self: start;
+  }
+  .burger-bar-middle{
+    align-self: center;
+  }
+  .burger-bar-bottom{
+    align-self: end;
+  }
+
+  /* is-actvie 클래스가 있을 때 */
+  &.is-active{
+    .burger-bar-top, .burger-bar-bottom{
+      align-self: center;
+    }
+  
+    .burger-bar-top{
+      rotate: 45deg;
+    }
+  
+    .burger-bar-middle{
+      translate: -100% 0;
+    }
+  
+    .burger-bar-bottom{
+      rotate: -45deg;
+    }
+  }
+
+  @media (min-width: 768px){
+    display: none;
+  }
+}
+
+/* transition - 애니메이션 */
+/* 내비게이션 */
+.menu{
+  position: fixed;
+  background: orange;
+  top: 0;
+  left: 0;
+  width: 70%;
+  height: 100vh;
+  translate: -100% 0;
+  /* transition-property: translate, background;
+  transition-duration: 2000ms, 2000ms;
+  transition-delay: 0ms, 4000ms;
+  transition-timing-function: ease-in-out, ease-in-out; */
+  /* transition: translate 2000ms 0ms ease-in-out, 
+              background 2000ms 2000ms ease-in-out; */
+  transition: all 0.2s;
+
+  &.is-active{
+    translate: 0 0;
+    background: purple;
+  }
+}
+
+/* 로고 */
+.logo{
+  background-color: blue;
+  background-image: image-set(
+    url(/images/webcafe-logo.png) 1x,
+    url(/images/webcafe-logo@2x.png) 2x
+  );
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 20%;
+  /* height: 50px; */
+  aspect-ratio: 1/0.28921568627450983;
+}
+
+
+/* 추천 서적 - book */
+.main{
+  background-color: transparent;
+}
+
+.book{
+  /* background-color: transparent;
+  background-image: url(/apple/apple_watch.jpeg);
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  -webkit-mask-image: url(/svg/star.svg);
+  mask-image: url(/svg/star.svg);
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: 50% 50%;;
+  mask-position: 50% 50%;; */
+}
+
+.twitter{
+  font-size: 100px;
+  font-weight: 900;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(/apple/apple_watch.jpeg);
+  background-repeat: no-repeat;
+  background-position: 0 100%;
+  background-clip: text;
+  color: transparent;
+}
+
+/* 새소식 */
+.iframe-container{
+  width: 100%;
+  aspect-ratio: 16/9;
+
+  iframe{
+    width: 100%;
+    height: 100%;
+    vertical-align: top;
+  }
+}
+
+/* 스프라이트 이미지 */
+.sprite{
+  height: 60px;
+  background-color: hotpink;
+  background-image: url(/images/sprite_main.png);
+  background-repeat: no-repeat;
+  text-indent: 65px;
+}
+
+.news .sprite{
+  background-position: 0 -230px;
+}
